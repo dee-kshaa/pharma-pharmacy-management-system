@@ -1,0 +1,20 @@
+# Local database configuration and credentials
+**/config.php
+.env
+.env.*
+!.env.example
+
+# Logs, temporary and generated files
+*.log
+*.tmp
+*.cache
+*.bak
+*.backup
+*.old
+cache/
+tmp/
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/

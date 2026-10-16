@@ -1,0 +1,43 @@
+/* Keep POS content clear of the fixed sidebar at each shared nav breakpoint. */
+.pos-content {
+  box-sizing: border-box;
+  width: calc(100% - 328px);
+  max-width: 1100px;
+  min-width: 0;
+  margin: 100px 38px 40px 290px;
+  padding: 24px;
+  background: #fff;
+}
+
+.pos-content section,
+.pos-content form,
+.pos-content .pos-grid {
+  min-width: 0;
+}
+
+.pos-content input,
+.pos-content select,
+.pos-content button {
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .pos-content {
+    width: calc(100% - 250px);
+    margin: 100px 20px 30px 230px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pos-content {
+    width: calc(100% - 178px);
+    margin: 82px 14px 24px 164px;
+    padding: 18px;
+  }
+
+  .pos-content table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
